@@ -18,5 +18,34 @@
           <b>Sin duda, una web de ¡10!</b>
           <br> </font>
           <IMG SRC="1.jpeg"> </IMG>
+          <param name="WMODE" value="TRANSPARENT">
+          <body> 
+<p>El reloj...</p> 
+<form name="Reloj"> 
+<input type="text" size="7" name="tiempo" value="mm:hh:ss" title="Tiempo restante para finalizar el día"> 
+<script language="JavaScript"> 
+<!-- 
+var tiempoAtras; 
+
+updateReloj(); 
+function updateReloj() { 
+var tiempo = new Date(); 
+var hora = 23-tiempo.getHours(); 
+var minutos = 59-tiempo.getMinutes(); 
+var segundos = 59-tiempo.getSeconds(); 
+
+tiempoAtras= (hora < 10) ? hora :hora; 
+tiempoAtras+= ((minutos < 10) ? ":0" : ":" + minutos; 
+tiempoAtras+= ((segundos < 10) ? ":0" : ":"
++ segundos; 
+
+document.Reloj.tiempo.value = tiempoAtras; 
+
+setTimeout("updateReloj()",1000); 
+} 
+//--> 
+</script> 
+</form> 
+</body> 
   </body>
 </html>
